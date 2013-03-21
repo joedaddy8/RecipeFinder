@@ -1,0 +1,22 @@
+<h3>Recipes</h3>
+<table class="recipes">
+  <% @recipes.each do |recipe| %>
+    <tr>
+      <td>
+        <%= link_to recipe.name, recipe %> 
+      </td>  
+      <td>
+        <%= image_tag(recipe.imgUrl) %> 
+      </td>  
+      <td>
+        <p> <%= recipe.instructions %> </p>
+      </td>  
+      <td>
+        <%= recipe.rating %>
+      </td>  
+      <td>
+        <p>Source Website: <%= recipe.webUrl %></p>
+      </td>  
+    </tr>
+  <% end %>
+</table>

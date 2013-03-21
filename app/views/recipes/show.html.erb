@@ -1,0 +1,9 @@
+<h1><%= @recipe.name %> </h1>
+<img src="<%= @recipe.imgUrl %>">
+<p><%= @recipe.instructions %></p>
+<p> <%= @recipe.rating %> </p>
+<ul class="ingredient">
+  <% @ingredients.each do |ingredient| %>
+    <li>ingredient.name</li> 
+  <% end %>
+</ul>
